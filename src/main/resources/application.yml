@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+
+utilities:
+  servers:
+    - host: 10.25.164.13
+      user: ven-guptaav
+      password: Justbeyourself123$
+      utilities:
+        - name: MQServerPoolUtility
+          identifier: MQServerPoolUtility
+          type: SHELL
+
+        - name: SwitParser
+          identifier: SwitParser
+          type: SHELL
+
+        - name: Swit WorkItem
+          identifier: SwitWorkItem
+          type: SHELL
+
+        - name: Process Data
+          identifier: SWIFT_MT
+          type: SHELL
+
+        - name: Book Transaction
+          identifier: SWIFT_BT_MT
+          type: SHELL
+
+        - name: Pending Posting
+          identifier: SWIFT_TRAN
+          type: SHELL
